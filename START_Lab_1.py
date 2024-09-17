@@ -81,31 +81,9 @@ def lab1Question4(file_name):
     # Take an input of a file name. 
     # Read that file and return a list of all numbers in that file
     list_of_nums = []
-    with open (file_name, "r") as file:
-        for line in file:
-            words = line.split()
-            for word in words:
-                if word.isdigit():
-                    list_of_nums.append(int(word))
     return list_of_nums
 
-# Test case 1
-file_name = "github/test_file1.txt"
-expected_list = [1, 2, 3, 4, 5]
-result = lab1Question4(file_name)
-print (f"Test result: {result}")
-print(f"Expected result: {expected_list}")
-assert lab1Question4(file_name) == expected_list
-
-# Test case 2
-file_name = "github/test_file2.txt"
-expected_list = [10, 20, 30, 40, 50]
-result = lab1Question4(file_name)
-print (f"Test result: {result}")
-print(f"Expected result: {expected_list}")
-assert lab1Question4(file_name) == expected_list
-
-
+ 
 
 
 def lab1Question5(list_numbers):
